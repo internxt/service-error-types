@@ -5,9 +5,14 @@ Common error types for various Internxt services.
 
 Error Types
 -----------
-
+* `RateLimited`
 * `NotFoundError`
 * `NotAuthorizedError`
-* `NotImplementedError`
+* `ForbiddenError`
+* `InternalError`
 * `BadRequestError`
-* `InternalError` 
+* `NotImplementedError`
+* `ServiceUnavailableError`
+* `TransferRateError`
+* `ConflictError`
+* `UnprocessableEntityError`

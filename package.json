@@ -1,7 +1,7 @@
 {
   "name": "storj-service-error-types",
   "version": "1.5.0",
-  "description": "common error types for various storj services",
+  "description": "common error types for various Internxt services",
   "main": "index.js",
   "scripts": {
     "test": "npm run testsuite && npm run linter",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Storj/service-error-types.git"
+    "url": "git+https://github.com/internxt/service-error-types.git"
   },
   "keywords": [
     "storj",
@@ -21,13 +21,13 @@
   "author": "Gordon Hall <gordon@storj.io>",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/Storj/service-error-types/issues"
+    "url": "https://github.com/internxt/service-error-types/issues"
   },
-  "homepage": "https://github.com/Storj/service-error-types#readme",
+  "homepage": "https://github.com/internxt/service-error-types#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "jshint": "^2.9.3",
-    "mocha": "^3.0.2",
-    "sinon": "^1.17.6"
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.1"
   }
 }
