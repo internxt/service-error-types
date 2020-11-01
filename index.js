@@ -1,5 +1,5 @@
 /**
- * @module storj-bridge/server/errors
+ * @module inxt-bridge/server/errors
  */
 
 'use strict';

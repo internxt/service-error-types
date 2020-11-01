@@ -14,7 +14,7 @@ describe('errorTypes', function() {
   });
 
   it('should accept a custom message', function () {
-    var NotFoundError = errorTypes.NotFoundError('These are not the' +
+    var NotFoundError = new errorTypes.NotFoundError('These are not the' +
       ' droids you are looking for');
     expect(NotFoundError.code).to.equal(404);
     expect(NotFoundError.statusCode).to.equal(404);
@@ -24,7 +24,7 @@ describe('errorTypes', function() {
 
   describe('NotFoundError', function () {
     it('should have default props', function () {
-      var NotFoundError = errorTypes.NotFoundError();
+      var NotFoundError = new errorTypes.NotFoundError();
       expect(NotFoundError.code).to.equal(404);
       expect(NotFoundError.statusCode).to.equal(404);
       expect(NotFoundError.message).to.equal('Resource not found');
@@ -33,7 +33,7 @@ describe('errorTypes', function() {
 
   describe('NotAuthorizedError', function () {
     it('should have default props', function () {
-      var NotAuthorizedError = errorTypes.NotAuthorizedError();
+      var NotAuthorizedError = new errorTypes.NotAuthorizedError();
       expect(NotAuthorizedError.code).to.equal(401);
       expect(NotAuthorizedError.statusCode).to.equal(401);
       expect(NotAuthorizedError.message).to.equal('Not authorized');
@@ -42,7 +42,7 @@ describe('errorTypes', function() {
 
   describe('ForbiddenError', function () {
     it('should have default props', function () {
-      var NotAuthorizedError = errorTypes.ForbiddenError();
+      var NotAuthorizedError = new errorTypes.ForbiddenError();
       expect(NotAuthorizedError.code).to.equal(403);
       expect(NotAuthorizedError.statusCode).to.equal(403);
       expect(NotAuthorizedError.message).to.equal('Forbidden');
@@ -51,7 +51,7 @@ describe('errorTypes', function() {
 
   describe('InternalError', function () {
     it('should have default props', function () {
-      var InternalError = errorTypes.InternalError();
+      var InternalError = new errorTypes.InternalError();
       expect(InternalError.code).to.equal(500);
       expect(InternalError.statusCode).to.equal(500);
       expect(InternalError.message).to.equal('Internal error');
@@ -60,7 +60,7 @@ describe('errorTypes', function() {
 
   describe('BadRequestError', function () {
     it('should have default props', function () {
-      var BadRequestError = errorTypes.BadRequestError();
+      var BadRequestError = new errorTypes.BadRequestError();
       expect(BadRequestError.code).to.equal(400);
       expect(BadRequestError.statusCode).to.equal(400);
       expect(BadRequestError.message).to.equal('Bad request');
@@ -69,7 +69,7 @@ describe('errorTypes', function() {
 
   describe('NotImplementedError', function () {
     it('should have default props', function () {
-      var NotImplementedError = errorTypes.NotImplementedError();
+      var NotImplementedError = new errorTypes.NotImplementedError();
       expect(NotImplementedError.code).to.equal(501);
       expect(NotImplementedError.statusCode).to.equal(501);
       expect(NotImplementedError.message).to.equal('Not implemented');
@@ -78,7 +78,7 @@ describe('errorTypes', function() {
 
   describe('ServiceUnavailableError', function () {
     it('should have default props', function () {
-      var ServiceUnavailableError = errorTypes.ServiceUnavailableError();
+      var ServiceUnavailableError = new errorTypes.ServiceUnavailableError();
       expect(ServiceUnavailableError.code).to.equal(503);
       expect(ServiceUnavailableError.statusCode).to.equal(503);
       expect(ServiceUnavailableError.message).to.equal('Service Unavailable');
@@ -87,7 +87,7 @@ describe('errorTypes', function() {
 
   describe('TransferRateError', function () {
     it('should have default props', function () {
-      var TransferRateError = errorTypes.TransferRateError();
+      var TransferRateError = new errorTypes.TransferRateError();
       expect(TransferRateError.code).to.equal(420);
       expect(TransferRateError.statusCode).to.equal(420);
       expect(TransferRateError.message).to.equal('Transfer rate limit');
@@ -96,7 +96,7 @@ describe('errorTypes', function() {
 
   describe('ConflictError', function () {
     it('should have default props', function () {
-      var ConflictError = errorTypes.ConflictError();
+      var ConflictError = new errorTypes.ConflictError();
       expect(ConflictError.code).to.equal(409);
       expect(ConflictError.statusCode).to.equal(409);
       expect(ConflictError.message).to.equal('Conflict');
@@ -105,7 +105,7 @@ describe('errorTypes', function() {
 
   describe('UnprocessableEntity', function () {
     it('should have default props', function () {
-      var UnprocessableEntityError = errorTypes.UnprocessableEntityError();
+      var UnprocessableEntityError = new errorTypes.UnprocessableEntityError();
       expect(UnprocessableEntityError.code).to.equal(422);
       expect(UnprocessableEntityError.statusCode).to.equal(422);
       expect(UnprocessableEntityError.message).to.equal('Unprocessable entity');
