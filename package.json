@@ -4,9 +4,10 @@
   "description": "common error types for various Internxt services",
   "main": "index.js",
   "scripts": {
-    "test": "npm run testsuite && npm run linter",
-    "linter": "./node_modules/.bin/jshint --config .jshintrc ./index.js ./test",
-    "testsuite": "./node_modules/.bin/_mocha test/**/*.js"
+    "build": "tsc",
+    "test": "npm run testsuite",
+    "linter": "jshint --config .jshintrc ./index.js ./test",
+    "testsuite": "mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,14 @@
   },
   "homepage": "https://github.com/internxt/service-error-types#readme",
   "devDependencies": {
+    "@types/assert": "^1.5.5",
     "chai": "^4.2.0",
     "jshint": "^2.9.3",
     "mocha": "^6.2.0",
-    "sinon": "^7.4.1"
+    "sinon": "^7.4.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "assert": "^2.0.0"
   }
 }
